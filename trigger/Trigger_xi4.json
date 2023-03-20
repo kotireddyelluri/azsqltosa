@@ -1,0 +1,29 @@
+{
+	"name": "Trigger_xi4",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "sql_to_df",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"windowStart": "@{addhours(trigger().scheduledTime, -1)}",
+					"windowEnd": "@trigger().scheduledTime"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Hour",
+				"interval": 1,
+				"startTime": "2023-03-19T23:34:00Z",
+				"endTime": "2023-03-20T23:34:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

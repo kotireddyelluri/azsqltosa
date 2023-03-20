@@ -1,0 +1,9 @@
+{
+	"name": "azureapp1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3327cb9d-ec20-48f8-9af5-5d6efba5c361",
+		"tenantId": "52531676-3c60-49e4-8a37-3b45ebbc958f"
+	}
+}
