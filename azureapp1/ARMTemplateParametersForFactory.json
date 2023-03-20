@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "azureapp1"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"Trigger_xi4_properties_sql_to_df_parameters_windowStart": {
+			"value": "@{addhours(trigger().scheduledTime, -1)}"
+		},
+		"Trigger_xi4_properties_sql_to_df_parameters_windowEnd": {
+			"value": "@trigger().scheduledTime"
+		}
+	}
+}
