@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_xi4",
+				"name": "newfile_df",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
